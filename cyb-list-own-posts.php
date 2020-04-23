@@ -109,11 +109,3 @@ function cyb_remove_views_filter_counter( $views ) {
   return $views;
 
 }
-
-add_filter('views_edit-post', 'remove_views_filter' );
-add_filter('views_edit-news', 'remove_views_filter' );
-function remove_views_filter( $views ) {
-
-  return array();
-
-}
